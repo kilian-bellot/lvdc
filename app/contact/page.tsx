@@ -1,5 +1,5 @@
-export default function About() {
+export default function Contact() {
   return (
-    <div>WIP ABOUT</div>
+    <div>WIP CONTACT</div>
   );
 }

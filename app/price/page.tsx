@@ -1,5 +1,5 @@
-export default function About() {
+export default function Price() {
   return (
-    <div>WIP</div>
+    <div>WIP PRICE</div>
   );
 }
