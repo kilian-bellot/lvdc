@@ -3,7 +3,7 @@ import me from "@public/assets/me.jpg";
 
 export default function About() {
   return (
-    <div className={"flex flex-col p-12 bg-primary mb-8 lg:flex-row lg:max-h-[90vh]"}>
+    <main className={"flex flex-col p-12 bg-primary mb-8 lg:flex-row lg:max-h-[90vh]"}>
       <div className="flex items-center">
         <Image src={me} alt="paysage" className="max-h-[60vh] mb-8 lg:m-0" style={{objectFit: "contain"}}/>
       </div>
@@ -17,7 +17,8 @@ export default function About() {
         </p>
         <p className={"mb-6"}>Au fil des années, j’ai eu la chance de voyager au Sri Lanka, à l'île Maurice, aux
           États-Unis, au Mexique, en
-          Espagne, au Portugal et dans bien d'autres endroits aussi magnifiques les uns que les autres. Ces voyages ont
+          Espagne, au Portugal et dans bien d'autres endroits aussi magnifiques les uns que les autres. Ces voyages
+          ont
           nourri ma passion et affiné mon expertise.
         </p>
         <p className={"mb-6"}>En 2021, la pandémie m'a contrainte à me réorienter et à quitter ce domaine que j'aimais
@@ -30,7 +31,7 @@ export default function About() {
           destinations fascinantes, je suis là pour transformer vos rêves de voyage en réalité.
         </p>
       </div>
-    </div>
+    </main>
   )
 
 }
