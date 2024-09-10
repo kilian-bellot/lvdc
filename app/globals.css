@@ -2,17 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-    --color-primary: #225378;
-    --color-secondary: #c0779d;
-    /* orange */
-    /*--color-secondary: #e56108;*/
-    --color-tertiary: #ffffff;
-
-    color: var(--color-primary);
-    background: #fff;
-}
-
 .text-primary {
     color: var(--color-primary);
 }
@@ -49,8 +38,28 @@
     background-color: var(--color-tertiary);
 }
 
+:root {
+    --color-primary: #225378;
+    --color-secondary: #c0779d;
+    --color-tertiary: #ffffff;
+
+    color: var(--color-primary);
+    background: #fff;
+}
+
+body {
+    min-width: 320px;
+    max-width: 1600px;
+    margin: auto;
+}
+
 .--no-scroll {
     overflow: hidden;
+}
+
+img .-lg {
+    width: 100%;
+    height: auto;
 }
 
 a, button:not([disabled]):focus {

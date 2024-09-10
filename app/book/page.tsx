@@ -6,7 +6,8 @@ export default function Book() {
       <Section title={"Pourquoi un carnet de voyage personnalisé?"}>
         <p>
           Nous pourrions vous faire une longue liste avec toutes nos propositions, mais sincèrement vous méritez mieux.
-          REVAOA souhaite vous donner envie de vous projeter, commencer à rêver de ce voyage. Nous essayons de rendre
+          Créa-voyages souhaite vous donner envie de vous projeter, commencer à rêver de ce voyage. Nous essayons de
+          rendre
           nos
           guides personnalisés agréables à la lecture.
           Vous en recevrez une version numérique facile à sauvegarder et si vous le souhaitez une version papier
@@ -16,7 +17,7 @@ export default function Book() {
         </p>
         <p>Quand réalisons-nous votre carnet de voyage personnalisé ?</p>
         <p>
-          Une fois votre voyage validé, REVAOA réalise votre carnet de voyage personnalisé en y incluant les
+          Une fois votre voyage validé, Créa-voyages réalise votre carnet de voyage personnalisé en y incluant les
           réservations
           que vous avez effectuées directement suite à nos propositions.
         </p>

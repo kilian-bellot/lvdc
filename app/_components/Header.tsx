@@ -38,7 +38,7 @@ export default function Header() {
   return (
     <header
       className={`bg-white border-b b-secondary sticky z-50 top-0 flex h-24 items-center justify-between p-1`}>
-      <Link href={"/"} className="flex items-center h-full sm:pr-1">
+      <Link href={"/"} className="flex items-center h-full sm:pr-1 lg:ml-12">
         <span className={"w-20 h-20 relative mr-2"}>
           <Image src={"/assets/logo.jpg"} alt="logo" fill={true}/>
         </span>
@@ -47,12 +47,12 @@ export default function Header() {
         </h1>
       </Link>
       <span className="sm:hidden h-auto" onClick={handleMenuClick}>
-        {!showMenu && <Svg src={"/assets/icons/menu.svg"} alt={"menu"} size={36} className={"mr-4"}/>}
+        {!showMenu && <Svg src={"/assets/icons/menu.svg"} alt={"menu"} size={36} className={"mx-4"}/>}
       </span>
       <nav
         className={`h-full bg-white ${showMenu ? "fixed z-10 inset-0 h-full w-full" : "hidden"} sm:block`}>
         {showMenu && <div className={"relative w-full h-8"}>
-            <Svg src={"/assets/icons/close.svg"} alt={"close"} size={36} className={"absolute right-0 m-8"}
+            <Svg src={"/assets/icons/close.svg"} alt={"close"} size={36} className={"absolute right-0 m-8 mr-4"}
                  onClick={handleMenuClick}/>
         </div>}
         <ul

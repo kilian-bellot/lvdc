@@ -5,19 +5,17 @@ import mountain from "@/public/assets/mountain.jpg";
 
 export default function Home() {
   return (
-    <main className={"p-16 pt-8"}>
+    <main className={"p-4 pt-8 lg:p-16"}>
       <Section title="Ma mission">
         <div className="flex flex-col md:flex-row">
-          <p className="pb-8 md:pr-4 md:pb-4 md:w-1/2 lg:w-1/4">
+          <p className="pb-8 md:w-1/2 md:pr-4 md:pb-4">
             Je suis là pour transformer vos rêves de voyage en réalité ! Mon objectif est de vous aider à créer un
             itinéraire parfait ou à choisir la destination qui répond à toutes vos envies. Je crois que chaque voyage
             est unique et mérite une attention particulière pour le rendre inoubliable. Avec mon expertise et mes
             conseils personnalisés, je m'engage à enrichir votre expérience de voyage. Contactez-moi pour un voyage sur
             mesure et mémorable !
           </p>
-          <div className="flex items-center max-h-fit md:w-1/2 lg:w-3/4">
-            <Image src={mountain} alt="paysage" className="max-h-full rounded-lg" style={{objectFit: "contain"}}/>
-          </div>
+          <Image src={mountain} alt="paysage" className="-lg rounded-lg md:w-1/2" sizes="100vw"/>
         </div>
       </Section>
       <Section title="Pourquoi me choisir ?">
