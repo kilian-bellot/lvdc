@@ -38,6 +38,10 @@
     background-color: var(--color-tertiary);
 }
 
+.bg-light {
+    background-color: var(--color-light-gray);
+}
+
 .fill-primary {
     fill: var(--color-primary);;
 }
@@ -54,6 +58,7 @@
     --color-primary: #225378;
     --color-secondary: #c0779d;
     --color-tertiary: #ffffff;
+    --color-light-gray: #ebf3f9;
 
     color: var(--color-primary);
     background: #fff;

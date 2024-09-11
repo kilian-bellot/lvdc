@@ -1,17 +1,18 @@
 import Image from "next/image";
 import Section from "@/app/_components/Section";
 import Strength from "@/app/_components/Strength";
-import mountain from "@/public/assets/mountain.jpg";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <main className={"p-4 pt-8 lg:p-16"}>
       <Section title="Ma mission">
         <div className="flex flex-col items-center md:flex-row">
-          <p className="pb-8 md:border-b-2 border-secondary md:text-right md:w-1/2 md:mr-4 md:mb-4">
+          <p className="pb-8 md:border-b-2 border-secondary md:text-right md:mr-8 md:mb-4 lg:mr-16">
             Révéler la magie de votre voyage avec un itinéraire sur mesure qui rendra chaque instant inoubliable !
           </p>
-          <Image src={mountain} alt="paysage" className="-lg rounded-lg md:w-1/2" sizes="100vw"/>
+          <Image src={"/assets/travel-the-world.png"} alt="carte du monde avec des objets à emporter dans la valise"
+                 className="-lg rounded-lg md:w-1/2" width="700" height="450"/>
         </div>
       </Section>
       <Section title="Pourquoi me choisir ?">
@@ -34,9 +35,13 @@ export default function Home() {
       </Section>
       <Section title={"Comment ça fonctionne ?"}>En cours de rédaction...</Section>
       <Section>
-        <p>Prêt à vous lancer dans la création d’un voyage sur mesure ?</p>
-        <p>N’attendez plus, le premier rendez-vous est gratuit !</p>
-        <p>Clique ici pour voir mes disponibilités</p>
+        <div className={"flex flex-col bg-light rounded-md py-4 px-20 items-center gap-y-4"}>
+          <p>Prêt à vous lancer dans la création d’un voyage sur mesure ?</p>
+          <p className={"font-bold"}>N’attendez plus, le premier rendez-vous est gratuit !</p>
+          <Link href="/contact" className={"flex w-48 rounded-full bg-secondary py-2 text-center text-tertiary italic"}>
+            Afficher mes disponibilités
+          </Link>
+        </div>
       </Section>
       <Section>
         <p> « Voyager c’est vivre. »</p>
