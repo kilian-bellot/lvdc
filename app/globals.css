@@ -60,13 +60,16 @@
     --color-tertiary: #ffffff;
     --color-light-gray: #ebf3f9;
 
+    --sizing-min-width: "320px";
+    --sizing-max-width: "1200px";
+
     color: var(--color-primary);
     background: #fff;
 }
 
 body {
-    min-width: 320px;
-    max-width: 1600px;
+    min-width: var(--sizing-min-width);
+    max-width: var(--sizing-max-width);
     margin: auto;
 }
 

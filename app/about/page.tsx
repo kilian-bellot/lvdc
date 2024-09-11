@@ -53,7 +53,7 @@ export default function About() {
       <Section title={"Quelles sont mes valeurs ?"}>
         {values.map(({title, text}) => {
           return (
-            <div key={title} className={"px-12 md:px-20"}>
+            <div key={title} className={"w-full px-12 md:px-20"}>
               <h3 className={"font-bold underline"}>{title}</h3>
               <p className={"mb-8"}>{text}</p>
             </div>

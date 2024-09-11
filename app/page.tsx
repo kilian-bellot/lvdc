@@ -2,6 +2,7 @@ import Image from "next/image";
 import Section from "@/app/_components/Section";
 import Strength from "@/app/_components/Strength";
 import Link from "next/link";
+import How from "@app/_components/How";
 
 export default function Home() {
   return (
@@ -33,7 +34,7 @@ export default function Home() {
           </Strength>
         </ul>
       </Section>
-      <Section title={"Comment ça fonctionne ?"}>En cours de rédaction...</Section>
+      <Section title={"Comment ça fonctionne ?"}><How/></Section>
       <Section>
         <div className={"flex flex-col bg-light rounded-md py-4 px-20 items-center gap-y-4"}>
           <p>Prêt à vous lancer dans la création d’un voyage sur mesure ?</p>
