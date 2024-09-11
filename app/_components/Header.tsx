@@ -1,7 +1,7 @@
 "use client";
 import Image from 'next/image';
 import Link from "next/link";
-import Svg from "@app/_components/Svg";
+import Icon from "@app/_components/Icon";
 import {useEffect, useState} from "react";
 import {usePathname} from "@node_modules/next/dist/client/components/navigation";
 
@@ -37,7 +37,7 @@ export default function Header() {
 
   return (
     <header
-      className={`bg-white border-b b-secondary sticky z-50 top-0 flex h-24 items-center justify-between p-1`}>
+      className={`bg-white border-b border-secondary sticky z-50 top-0 flex h-24 items-center justify-between p-1`}>
       <Link href={"/"} className="flex items-center h-full sm:pr-1 lg:ml-12">
         <span className={"w-20 h-20 relative mr-2"}>
           <Image src={"/assets/logo.jpg"} alt="logo" fill={true}/>
@@ -47,13 +47,13 @@ export default function Header() {
         </h1>
       </Link>
       <span className="sm:hidden h-auto" onClick={handleMenuClick}>
-        {!showMenu && <Svg src={"/assets/icons/menu.svg"} alt={"menu"} size={36} className={"mx-4"}/>}
+        {!showMenu && <Icon name={"menu"} size={36} className={"mx-4"}/>}
       </span>
       <nav
         className={`h-full bg-white ${showMenu ? "fixed z-10 inset-0 h-full w-full" : "hidden"} sm:block`}>
         {showMenu && <div className={"relative w-full h-8"}>
-            <Svg src={"/assets/icons/close.svg"} alt={"close"} size={36} className={"absolute right-0 m-8 mr-4"}
-                 onClick={handleMenuClick}/>
+            <Icon name={"close"} size={36} className={"absolute right-0 m-8 mr-4"}
+                  onClick={handleMenuClick}/>
         </div>}
         <ul
           className={`flex h-full justify-end sm:mr-0 lg:mr-12 ${showMenu ? "flex-col h-min items-center" : "flex-row"}`}>
@@ -62,7 +62,7 @@ export default function Header() {
               <li key={title}
                   className={`
                     flex items-center text-center mx-4 sm:mx-2 lg:mx-4 tracking-wider
-                    ${showMenu ? "w-full p-8 border-b border-solid b-secondary" : ""}
+                    ${showMenu ? "w-full p-8 border-b border-solid border-secondary" : ""}
                     ${currentPage == url ? "font-bold" : ""}
                   `}>
                 <Link href={url} onClick={handleNavClick}
