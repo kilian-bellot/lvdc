@@ -37,22 +37,20 @@ export default function Header() {
 
   return (
     <header
-      className={`bg-white border-b border-secondary sticky z-50 top-0 flex h-24 items-center justify-between p-1`}>
-      <Link href={"/"} className="flex items-center h-full sm:pr-1 lg:ml-12">
+      className={`bg-tertiary border-b border-secondary sticky z-50 top-0 h-24 flex items-center justify-center p-1`}>
+      <Link href={"/"} className="flex mr-auto flex-grow-0 h-full sm:pr-1">
         <span className={"w-20 h-20 relative mr-2"}>
           <Image src={"/assets/logo.jpg"} alt="logo" fill={true}/>
         </span>
-        <h1 className={"text-2xl sm:text-lg md:text-lg lg:text-2xl text-nowrap"}><span
-          className="text-secondary">C</span>rea-voyage
-        </h1>
+        <h1 className={"hidden"}>Les voyages de Charlène</h1>
       </Link>
       <span className="sm:hidden h-auto" onClick={handleMenuClick}>
-        {!showMenu && <Icon name={"menu"} size={36} className={"mx-4"}/>}
+        {!showMenu && <Icon name={"menu"} size={36} className={"mr-4"}/>}
       </span>
       <nav
-        className={`h-full bg-white ${showMenu ? "fixed z-10 inset-0 h-full w-full" : "hidden"} sm:block`}>
+        className={`h-full bg-tertiary mr-auto ${showMenu ? "fixed z-10 inset-0 h-full w-full" : "hidden"} sm:block`}>
         {showMenu && <div className={"relative w-full h-8"}>
-            <Icon name={"close"} size={36} className={"absolute right-0 m-8 mr-4"}
+            <Icon name={"close"} size={36} className={"absolute right-0 mt-8 mr-5"}
                   onClick={handleMenuClick}/>
         </div>}
         <ul

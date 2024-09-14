@@ -6,14 +6,21 @@ import Timeline from "@app/_components/Timeline";
 
 export default function Home() {
   return (
-    <main className={"p-4 pt-8 lg:p-16"}>
-      <Section title="Ma mission">
-        <div className="flex flex-col items-center md:flex-row">
-          <p className="pb-8 md:border-b-2 border-secondary md:text-right md:mr-8 md:mb-4 lg:mr-16">
-            Révéler la magie de votre voyage avec un itinéraire sur mesure qui rendra chaque instant inoubliable !
-          </p>
+    <main className={"px-4"}>
+      <Section>
+        <div className={"relative p-4 sm:p-20 bg-gradient-to-b from-tertiary to-50% from-50% to-primary"}>
           <Image src={"/assets/home/landscape.png"} alt="carte du monde avec des objets à emporter dans la valise"
-                 className="-lg rounded-lg md:w-1/2" width="700" height="450"/>
+                 className="border-4 border-tertiary" width="1280" height="800"/>
+          <div
+            className={"absolute bottom-10 sm:bottom-10 left-1/2 translate-x-[-50%] z-10 w-4/5 sm:w-1/2 px-6 py-2 bg-tertiary opacity-90 text-center"}>
+            <h2 className={"flex flex-col items-center"}>
+              <span className={"text-sm sm:text-2xl"}>Bienvenue chez</span>
+              <span className={"text-sm sm:text-2xl text-secondary"}>Les voyages de Charlène</span>
+            </h2>
+            <p className={"text-xs sm:text-lg"}>
+              Révélez la magie de votre voyage avec un itinéraire sur mesure qui rendra chaque instant inoubliable !
+            </p>
+          </div>
         </div>
       </Section>
       <Section title="Pourquoi me choisir ?">
@@ -36,7 +43,7 @@ export default function Home() {
       </Section>
       <Section title={"Comment ça fonctionne ?"}><Timeline/></Section>
       <Section>
-        <div className={"flex flex-col bg-light rounded-md py-4 px-20 items-center gap-y-4"}>
+        <div className={"flex flex-col bg-light rounded-md py-4 px-16 items-center gap-y-4"}>
           <p>Prêt à vous lancer dans la création d’un voyage sur mesure ?</p>
           <p className={"font-bold"}>N’attendez plus, le premier rendez-vous est gratuit !</p>
           <Link href="/contact" className={"flex w-48 rounded-full bg-secondary py-2 text-center text-tertiary italic"}>

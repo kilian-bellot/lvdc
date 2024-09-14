@@ -8,6 +8,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        'primary': '#225378',
+        'secondary': '#c0779d',
+        'tertiary': '#ffffff',
+        'light-gray': '#ebf3f9',
+      },
       fontFamily: {
         sans: ['var(--font-poppins)'],
       },

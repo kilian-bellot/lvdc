@@ -29,8 +29,8 @@ export default function TimelineItem({title, text, icon, iconPosition, index}) {
         className={`w-[70vw] md:w-48 absolute p-1 sm:p-2 border-4 border-secondary rounded-xl text-center ${containerInset}`}>
         <h3 className={"mb-2 font-bold"}>{title}</h3>
         <span className={iconPosition}>
-          <Icon name={icon} size={48}
-                className={`absolute ${iconInset} bg-white rounded-full`}/>
+          <Icon name={icon} size={36}
+                className={`absolute ${iconInset} bg-tertiary rounded-full`}/>
         </span>
         <p className={"text-xs sm:text-md"}>{text}</p>
       </div>
