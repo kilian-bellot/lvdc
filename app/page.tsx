@@ -1,9 +1,11 @@
 import Image from "next/image";
+import Link from "next/link";
+import {pacifico} from "@app/font";
 import Section from "@/app/_components/Section";
 import Strength from "@/app/_components/Strength";
-import Link from "next/link";
 import Timeline from "@app/_components/Timeline";
-import {pacifico} from "@app/font";
+import TravelPlanner from "@app/_components/TravelPlanner";
+import Icon from "@app/_components/Icon";
 
 export default function Home() {
   return (
@@ -24,25 +26,63 @@ export default function Home() {
           </div>
         </div>
       </Section>
-      <Section title="Pourquoi me choisir ?">
-        <ul className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-4">
-          <Strength title="Gain de temps" icon="speed-clock">
-            Partagez avec moi votre projet de voyage, et je m'occuperai de l'organisation pour vous faire gagner du
-            temps.
-          </Strength>
-          <Strength title="En toute sérénité" icon="trust">
-            J'effectue toutes les recherches et vous n'avez plus qu'à valider!
-          </Strength>
-          <Strength title="Sur mesure" icon="puzzle">
-            Je prends en compte vos préférences et vous suggère des options, tout en vous laissant le contrôle total sur
-            votre voyage.
-          </Strength>
-          <Strength title="Budget maîtrisé" icon="money-hand">
-            Pour chaque voyage sur mesure, l'offre est claire et le budget du voyage est transparent.
-          </Strength>
-        </ul>
+      <Section title="Qu'est-ce qu'un travel planner?">
+        <div className={"flex flex-col md:flex-row"}>
+          <TravelPlanner imagePath={"/assets/home/easter-isle.png"} alt={"statues Moaï sur l'île de paques"}
+                         reverse={true}>
+            <p>
+              Un travel planner est un expert en organisation de voyage qui vous aide à la préparation de vos prochaines
+              vacances dans le monde entier.
+            </p>
+            <p>
+              Je mets à votre disposition <span className={"text-secondary"}>mon expertise</span> pour vous proposer le
+              séjour le plus complet possible. Grâce à
+              ce
+              service, le voyage sur-mesure n’est plus un luxe ; il vous permet de partir en toute sérénité sans quitter
+              le
+              confort de votre canapé.
+            </p>
+          </TravelPlanner>
+          <span className={"border-b-2 border-secondary sm:border-r-2"}/>
+          <TravelPlanner imagePath={"/assets/home/maldives.png"} alt={"une ile des maldives"}>
+            <p>
+              En tant que travel planner, j’ai à cœur de trouver les meilleures prestations pour rendre votre voyage
+              inoubliable. Je consacre de nombreuses heures à effectuer des recherches approfondies afin de vous offrir
+              des recommandations parfaitement adaptées. Je m’assure d’élaborer un voyage en accord avec <span
+              className={"text-secondary"}>vos valeurs</span>, <span
+              className={"text-secondary"}>vos attentes</span> et <span className={"text-secondary"}>votre budget</span>.
+            </p>
+          </TravelPlanner>
+        </div>
       </Section>
-      <Section title={"Comment ça fonctionne ?"}><Timeline/></Section>
+      <Section title="Pourquoi me choisir ?">
+        <div className={"relative py-12"}>
+          <ul className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-4">
+            <Strength title="Gain de temps" icon="speed-clock">
+              Epargnez-vous de longues heures de recherches ! Partagez moi votre projet de voyage et je m'occuperai de
+              l'organisation pour vous faire gagner du temps.
+            </Strength>
+            <Strength title="En toute sérénité" icon="trust">
+              Des vacances réussies sont des vacances bien préparées ! J'effectue toutes les recherches et vous n'avez
+              plus qu'à valider !
+            </Strength>
+            <Strength title="Sur mesure" icon="puzzle">
+              Je prends en compte vos préférences et vous suggère des options, tout en vous laissant un total contrôle
+              sur votre voyage.
+            </Strength>
+            <Strength title="Budget maîtrisé" icon="money-hand">
+              Pour chaque voyage sur mesure, l'offre est claire et le budget du voyage est transparent. Je ne touche
+              aucune commission sur vos réservations, vous assurant objectivité et indépendance dans mes propositions.
+            </Strength>
+          </ul>
+          <span className={"absolute bottom-0 left-0 right-0 mx-auto w-fit md:block"}>
+            <Icon name={"plane"} size={200} style={{height: "50px"}}/>
+          </span>
+        </div>
+      </Section>
+      <Section title={"Comment ça fonctionne ?"}>
+        <Timeline/>
+      </Section>
       <Section>
         <div className={"flex flex-col bg-light rounded-md py-4 px-16 items-center gap-y-4"}>
           <p>Prêt à vous lancer dans la création d’un voyage sur mesure ?</p>
