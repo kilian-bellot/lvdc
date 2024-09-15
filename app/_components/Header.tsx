@@ -21,12 +21,6 @@ export default function Header() {
     return setShowMenu(!showMenu)
   }
 
-  const handleNavClick = (event) => {
-    // TODO close menu and continue event ?
-    console.log(event);
-    return;
-  }
-
   useEffect(() => {
     setShowMenu(false);
   }, [currentPage]);
@@ -39,8 +33,8 @@ export default function Header() {
     <header
       className={`bg-tertiary border-b border-secondary sticky z-50 top-0 h-24 flex items-center justify-center p-1`}>
       <Link href={"/"} className="flex mr-auto flex-grow-0 h-full sm:pr-1">
-        <span className={"w-20 h-20 relative mr-2"}>
-          <Image src={"/assets/logo.jpg"} alt="logo" fill={true}/>
+        <span className={"w-20 h-20 relative"}>
+          <Image src={"/assets/logo.svg"} alt="logo" fill={true}/>
         </span>
         <h1 className={"hidden"}>Les voyages de Charlène</h1>
       </Link>
@@ -63,7 +57,7 @@ export default function Header() {
                     ${showMenu ? "w-full p-8 border-b border-solid border-secondary" : ""}
                     ${currentPage == url ? "font-bold" : ""}
                   `}>
-                <Link href={url} onClick={handleNavClick}
+                <Link href={url}
                       className={title == "Contact" ? "bg-secondary text-tertiary rounded p-2 mx-0 leading-4" : ""}>
                   {title}
                 </Link>

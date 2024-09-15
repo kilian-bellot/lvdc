@@ -68,6 +68,7 @@ body {
     color: var(--color-primary);
     min-width: var(--sizing-min-width);
     max-width: var(--sizing-max-width);
+    margin: auto;
 }
 
 .--no-scroll {

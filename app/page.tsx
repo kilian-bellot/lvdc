@@ -3,21 +3,22 @@ import Section from "@/app/_components/Section";
 import Strength from "@/app/_components/Strength";
 import Link from "next/link";
 import Timeline from "@app/_components/Timeline";
+import {pacifico} from "@app/font";
 
 export default function Home() {
   return (
     <main className={"px-4"}>
       <Section>
-        <div className={"relative p-4 sm:p-20 bg-gradient-to-b from-tertiary to-50% from-50% to-primary"}>
-          <Image src={"/assets/home/landscape.png"} alt="carte du monde avec des objets à emporter dans la valise"
+        <div className={"relative p-4 sm:p-20 sm:pt-4 bg-gradient-to-b from-tertiary to-50% from-50% to-primary"}>
+          <Image src={"/assets/home/landscape.png"} alt="paysage alpin"
                  className="border-4 border-tertiary" width="1280" height="800"/>
           <div
-            className={"absolute bottom-10 sm:bottom-10 left-1/2 translate-x-[-50%] z-10 w-4/5 sm:w-1/2 px-6 py-2 bg-tertiary opacity-90 text-center"}>
-            <h2 className={"flex flex-col items-center"}>
-              <span className={"text-sm sm:text-2xl"}>Bienvenue chez</span>
-              <span className={"text-sm sm:text-2xl text-secondary"}>Les voyages de Charlène</span>
+            className={`absolute bottom-10 sm:bottom-10 left-1/2 translate-x-[-50%] z-10 w-4/5 sm:w-1/2 px-6 py-2 bg-tertiary opacity-90 text-center ${pacifico.className}`}>
+            <h2 className={"flex flex-col items-center text-lg sm:text-2xl"}>
+              <span>Bienvenue chez</span>
+              <span className={"text-secondary"}>Les voyages de Charlène</span>
             </h2>
-            <p className={"text-xs sm:text-lg"}>
+            <p className={"text-sm sm:text-lg"}>
               Révélez la magie de votre voyage avec un itinéraire sur mesure qui rendra chaque instant inoubliable !
             </p>
           </div>
