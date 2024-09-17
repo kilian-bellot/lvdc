@@ -40,9 +40,9 @@ const icons = {
   "trust": TrustSvg,
 };
 
-export default function Icon({name, size = 24, color = "primary", ...restProps}) {
+export default function Icon({name, size = 24, color = "primary", className = "", ...restProps}) {
   const SvgIcon = icons[name];
   return (
-    <SvgIcon height={size} width={size} className={`fill-${color}`} {...restProps}/>
+    <SvgIcon height={size} className={`fill-${color} ${className}`} {...restProps}/>
   )
 }

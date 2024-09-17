@@ -56,29 +56,25 @@ export default function Home() {
         </div>
       </Section>
       <Section title="Pourquoi me choisir ?">
-        <div className={"relative py-12"}>
-          <ul className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-4">
-            <Strength title="Gain de temps" icon="speed-clock">
-              Epargnez-vous de longues heures de recherches ! Partagez moi votre projet de voyage et je m'occuperai de
-              l'organisation pour vous faire gagner du temps.
-            </Strength>
-            <Strength title="En toute sérénité" icon="trust">
-              Des vacances réussies sont des vacances bien préparées ! J'effectue toutes les recherches et vous n'avez
-              plus qu'à valider !
-            </Strength>
-            <Strength title="Sur mesure" icon="puzzle">
-              Je prends en compte vos préférences et vous suggère des options, tout en vous laissant un total contrôle
-              sur votre voyage.
-            </Strength>
-            <Strength title="Budget maîtrisé" icon="money-hand">
-              Pour chaque voyage sur mesure, l'offre est claire et le budget du voyage est transparent. Je ne touche
-              aucune commission sur vos réservations, vous assurant objectivité et indépendance dans mes propositions.
-            </Strength>
-          </ul>
-          <span className={"absolute bottom-0 left-0 right-0 mx-auto w-fit md:block"}>
-            <Icon name={"plane"} size={200} style={{height: "50px"}}/>
-          </span>
-        </div>
+        <ul className="grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-4">
+          <Strength title="Gain de temps" icon="speed-clock">
+            Epargnez-vous de longues heures de recherches ! Partagez moi votre projet de voyage et je m'occuperai de
+            l'organisation pour vous faire gagner du temps.
+          </Strength>
+          <Strength title="En toute sérénité" icon="trust">
+            Des vacances réussies sont des vacances bien préparées ! J'effectue toutes les recherches et vous n'avez
+            plus qu'à valider !
+          </Strength>
+          <Strength title="Sur mesure" icon="puzzle">
+            Je prends en compte vos préférences et vous suggère des options, tout en vous laissant un total contrôle
+            sur votre voyage.
+          </Strength>
+          <Strength title="Budget maîtrisé" icon="money-hand">
+            Pour chaque voyage sur mesure, l'offre est claire et le budget du voyage est transparent. Je ne touche
+            aucune commission sur vos réservations, vous assurant objectivité et indépendance dans mes propositions.
+          </Strength>
+        </ul>
+        <Icon name={"plane"} size={96} className={"w-full bottom-0"}/>
       </Section>
       <Section title={"Comment ça fonctionne ?"}>
         <Timeline/>
