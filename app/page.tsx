@@ -6,13 +6,16 @@ import Strength from "@/app/_components/Strength";
 import Timeline from "@app/_components/Timeline";
 import TravelPlanner from "@app/_components/TravelPlanner";
 import Icon from "@app/_components/Icon";
+import landscapeImage from "@/public/assets/home/landscape.png";
+import easterIsleImage from "@/public/assets/home/easter-isle.png";
+import maldivesImage from "@/public/assets/home/maldives.png";
 
 export default function Home() {
   return (
     <main className={"px-4"}>
       <Section>
         <div className={"relative p-4 sm:p-20 sm:pt-4 bg-gradient-to-b from-tertiary to-50% from-50% to-primary"}>
-          <Image src={"/assets/home/landscape.png"} alt="paysage alpin"
+          <Image src={landscapeImage} alt="paysage alpin"
                  className="border-4 border-tertiary" width="1280" height="800"/>
           <div
             className={`absolute bottom-6 left-1/2 translate-x-[-50%] z-10 w-4/5 sm:w-1/2 px-2 sm:px-6 py-1 bg-tertiary opacity-90 text-center`}>
@@ -29,7 +32,7 @@ export default function Home() {
       </Section>
       <Section title="Qu'est-ce qu'un travel planner?">
         <div className={"flex flex-col md:flex-row"}>
-          <TravelPlanner imagePath={"/assets/home/easter-isle.png"} alt={"statues Moaï sur l'île de paques"}
+          <TravelPlanner imagePath={easterIsleImage} alt={"statues Moaï sur l'île de paques"}
                          reverse={true}>
             <p>
               Un travel planner est un expert en organisation de voyage qui vous aide à la préparation de vos prochaines
@@ -45,7 +48,7 @@ export default function Home() {
             </p>
           </TravelPlanner>
           <span className={"border-b-2 border-secondary sm:border-r-2"}/>
-          <TravelPlanner imagePath={"/assets/home/maldives.png"} alt={"une ile des maldives"}>
+          <TravelPlanner imagePath={maldivesImage} alt={"une ile des maldives"}>
             <p>
               En tant que travel planner, j’ai à cœur de trouver les meilleures prestations pour rendre votre voyage
               inoubliable. Je consacre de nombreuses heures à effectuer des recherches approfondies afin de vous offrir

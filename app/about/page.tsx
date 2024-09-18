@@ -1,15 +1,14 @@
 import Image from "next/image";
 import Icon from "@app/_components/Icon";
+import meMainImage from "@/public/assets/about/me-main.jpg";
 
 export default function About() {
   return (
     <main>
-      <div className={"flex flex-col p-12 bg-primary mb-8 lg:flex-row"}>
-        <div className="flex items-center">
-          <Image src={"/assets/about/me-main.jpg"} alt="paysage" className="max-h-[30vh] mb-8 lg:m-0"
-                 width="950" height="550" style={{objectFit: "contain"}}/>
-        </div>
-        <div className={"flex flex-col items-center text-tertiary md:px-8"}>
+      <div className={"flex flex-col lg:flex-row p-12 bg-primary items-stretch text-center"}>
+        <Image src={meMainImage} alt="paysage" width={1700} height={1100}
+               className={"lg:w-1/2 object-cover mb-4 lg:mb-0"}/>
+        <div className={"flex flex-col items-center text-center text-tertiary md:px-8"}>
           <p className={"mb-6"}>Je m'appelle <span className={"text-secondary"}>Charlène</span>, je suis française (plus
             précisément de Bourgogne) et expatriée au Québec depuis 2019. Maman d’un petit garçon, j’ai à cœur de lui
             partager et lui transmettre ma passion du voyage.

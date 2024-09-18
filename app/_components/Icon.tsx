@@ -1,3 +1,4 @@
+import LogoSvg from "@/public/assets/logo.svg"
 import MenuSvg from "@/public/assets/icons/menu.svg"
 import CloseSvg from "@/public/assets/icons/close.svg"
 import ArabesqueSvg from "@/public/assets/icons/about/arabesque.svg"
@@ -21,6 +22,7 @@ import FacebookSvg from "@/public/assets/icons/facebook.svg"
 import InstagramSvg from "@/public/assets/icons/instagram.svg"
 
 const icons = {
+  "logo": LogoSvg,
   "menu": MenuSvg,
   "close": CloseSvg,
   "arabesque": ArabesqueSvg,
