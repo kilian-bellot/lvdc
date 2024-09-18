@@ -1,5 +1,7 @@
+import Page from "@app/_components/Page";
+
 export default function Contact() {
   return (
-    <div>WIP CONTACT</div>
+    <Page>WIP CONTACT</Page>
   );
 }

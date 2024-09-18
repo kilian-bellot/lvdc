@@ -31,10 +31,10 @@ export default function Header() {
 
   return (
     <header
-      className={`bg-tertiary border-b border-secondary sticky z-50 top-0 h-24 flex items-center justify-center p-1`}>
-      <Link href={"/"} className="flex mr-auto flex-grow-0 h-full sm:pr-1">
+      className={`bg-tertiary border-b border-secondary sticky z-50 top-0 h-24 flex items-center justify-center p-1 mb-4`}>
+      <Link href={"/"} className="flex mr-auto flex-grow-0 h-full">
         <span className={"w-20 h-20 relative"}>
-          <Image src={"/assets/logo.svg"} alt="logo" fill={true}/>
+          <Image src={"/assets/logo.svg"} alt="logo Les Voyages de Charlène" fill={true}/>
         </span>
         <h1 className={"hidden"}>Les voyages de Charlène</h1>
       </Link>

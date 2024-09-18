@@ -1,8 +1,9 @@
+import Page from "@app/_components/Page";
 import Section from "@app/_components/Section";
 
 export default function Book() {
   return (
-    <main className={"p-16 pt-8"}>
+    <Page>
       <Section title={"Pourquoi un carnet de voyage personnalisé?"}>
         <p>
           Nous pourrions vous faire une longue liste avec toutes nos propositions, mais sincèrement vous méritez mieux.
@@ -41,6 +42,6 @@ export default function Book() {
         </p>
         <p>En cours de rédaction...</p>
       </Section>
-    </main>
+    </Page>
   );
 }

@@ -1,10 +1,11 @@
 import Image from "next/image";
 import notFoundImage from "@/public/assets/404.png";
+import Page from "@app/_components/Page";
 
 export default function NotFound() {
   return (
-    <div className={"relative"}>
-      <Image src={notFoundImage} alt="page introuvable" width="1200" height="800"/>
+    <Page className={"relative"}>
+      <Image src={notFoundImage} alt="page introuvable"/>
       <div
         className={"flex flex-col w-1/2 absolute z-10 left-4 sm:left-10 top-0 bottom-0 my-auto h-fit p-2 sm:p-10 bg-primary shadow-black shadow-md sm:text-2xl uppercase"}>
         <p className={"text-tertiary mb-4"}>
@@ -14,7 +15,6 @@ export default function NotFound() {
           Erreur 404
         </p>
       </div>
-
-    </div>
+    </Page>
   );
 }

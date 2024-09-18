@@ -12,7 +12,6 @@ export default function RootLayout({children}: Readonly<{
       <title>Les voyages de Charlène</title>
       <link rel="icon" href="/assets/logo.svg"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
     <body>
     <Header/>
