@@ -17,6 +17,8 @@ import QuoteSvg from "@/public/assets/icons/home/quote.svg"
 import SpeedClockSvg from "@/public/assets/icons/home/speed-clock.svg"
 import StampSvg from "@/public/assets/icons/home/stamp.svg"
 import TrustSvg from "@/public/assets/icons/home/trust.svg"
+import FacebookSvg from "@/public/assets/icons/facebook.svg"
+import InstagramSvg from "@/public/assets/icons/instagram.svg"
 
 const icons = {
   "menu": MenuSvg,
@@ -38,11 +40,13 @@ const icons = {
   "speed-clock": SpeedClockSvg,
   "stamp": StampSvg,
   "trust": TrustSvg,
+  "facebook": FacebookSvg,
+  "instagram": InstagramSvg,
 };
 
 export default function Icon({name, size = 24, color = "primary", className = "", ...restProps}) {
   const SvgIcon = icons[name];
   return (
-    <SvgIcon height={size} className={`fill-${color} ${className}`} {...restProps}/>
+    <SvgIcon height={size} className={`svg-${color} ${className}`} {...restProps}/>
   )
 }

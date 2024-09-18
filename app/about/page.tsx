@@ -6,7 +6,7 @@ export default function About() {
     <main>
       <div className={"flex flex-col p-12 bg-primary mb-8 lg:flex-row"}>
         <div className="flex items-center">
-          <Image src={"/assets/me-main.jpg"} alt="paysage" className="max-h-[30vh] mb-8 lg:m-0"
+          <Image src={"/assets/about/me-main.jpg"} alt="paysage" className="max-h-[30vh] mb-8 lg:m-0"
                  width="950" height="550" style={{objectFit: "contain"}}/>
         </div>
         <div className={"flex flex-col items-center text-tertiary md:px-8"}>

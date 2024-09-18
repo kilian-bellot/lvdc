@@ -21,7 +21,7 @@ export default function TimelineItem({title, text, icon, index}) {
   return (
     <div className={"flex relative h-1/5 md:w-1/5 items-center justify-center justify-self-center self-center"}>
       <span
-        className={"absolute flex w-16 h-16 bg-light rounded-full items-center justify-center text-2xl font-bold"}>
+        className={"absolute flex w-16 h-16 bg-neutral rounded-full items-center justify-center text-2xl font-bold"}>
         {position}
       </span>
       <div

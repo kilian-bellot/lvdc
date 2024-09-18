@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import {pacifico} from "@app/font";
+import {dancingScript, newsReader} from "@app/font";
 import Section from "@/app/_components/Section";
 import Strength from "@/app/_components/Strength";
 import Timeline from "@app/_components/Timeline";
@@ -15,10 +15,11 @@ export default function Home() {
           <Image src={"/assets/home/landscape.png"} alt="paysage alpin"
                  className="border-4 border-tertiary" width="1280" height="800"/>
           <div
-            className={`absolute bottom-10 sm:bottom-10 left-1/2 translate-x-[-50%] z-10 w-4/5 sm:w-1/2 px-6 py-2 bg-tertiary opacity-90 text-center ${pacifico.className}`}>
-            <h2 className={"flex flex-col items-center text-lg sm:text-2xl"}>
+            className={`absolute bottom-6 left-1/2 translate-x-[-50%] z-10 w-4/5 sm:w-1/2 px-2 sm:px-6 py-1 bg-tertiary opacity-90 text-center`}>
+            <h2 className={`flex flex-col items-center text-lg sm:text-2xl`}>
               <span>Bienvenue chez</span>
-              <span className={"text-secondary"}>Les voyages de Charlène</span>
+              <span
+                className={`text-lg sm:text-2xl text-secondary ${dancingScript.className}`}>Les voyages de Charlène</span>
             </h2>
             <p className={"text-sm sm:text-lg"}>
               Révélez la magie de votre voyage avec un itinéraire sur mesure qui rendra chaque instant inoubliable !
@@ -74,23 +75,28 @@ export default function Home() {
             aucune commission sur vos réservations, vous assurant objectivité et indépendance dans mes propositions.
           </Strength>
         </ul>
-        <Icon name={"plane"} size={96} className={"w-full bottom-0"}/>
+        <Icon name={"plane"} size={96}/>
       </Section>
       <Section title={"Comment ça fonctionne ?"}>
         <Timeline/>
       </Section>
       <Section>
-        <div className={"flex flex-col bg-light rounded-md py-4 px-16 items-center gap-y-4"}>
+        <div className={"relative flex flex-col bg-neutral rounded-md py-4 px-16 items-center gap-y-4"}>
           <p>Prêt à vous lancer dans la création d’un voyage sur mesure ?</p>
           <p className={"font-bold"}>N’attendez plus, le premier rendez-vous est gratuit !</p>
           <Link href="/contact" className={"flex w-48 rounded-full bg-secondary py-2 text-center text-tertiary italic"}>
             Afficher mes disponibilités
           </Link>
+          <Icon name={"stamp"} size={72}
+                className={"hidden sm:block sm:absolute sm:bottom-0 sm:right-0 sm:translate-x-8 sm:translate-y-8"}/>
         </div>
       </Section>
       <Section>
-        <p> « Voyager c’est vivre. »</p>
-        <p>– Hans Christian Andersen -</p>
+        <Icon name={"quote"} size={48} className={"w-full mb-12"}/>
+        <span className={`flex flex-col text-2xl text-center gap-y-6 ${newsReader.className}`}>
+          <p> « Voyager c’est vivre. »</p>
+          <p>– Hans Christian Andersen –</p>
+        </span>
       </Section>
     </main>
   )

@@ -2,65 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-.text-primary {
-    color: var(--color-primary);
-}
-
-.text-secondary {
-    color: var(--color-secondary);
-}
-
-.text-tertiary {
-    color: var(--color-tertiary);
-}
-
-.border-primary {
-    border-color: var(--color-primary);;
-}
-
-.border-secondary {
-    border-color: var(--color-secondary);
-}
-
-.border-tertiary {
-    border-color: var(--color-tertiary);
-}
-
-.bg-primary {
-    background-color: var(--color-primary);;
-}
-
-.bg-secondary {
-    background-color: var(--color-secondary);
-}
-
-.bg-tertiary {
-    background-color: var(--color-tertiary);
-}
-
-.bg-light {
-    background-color: var(--color-light-gray);
-}
-
-.fill-primary {
-    fill: var(--color-primary);;
-}
-
-.fill-secondary {
-    fill: var(--color-secondary);
-}
-
-.fill-tertiary {
-    fill: var(--color-tertiary);
-}
-
 :root {
     --color-primary: #225378;
     --color-secondary: #c0779d;
     --color-tertiary: #ffffff;
     --color-light-gray: #ebf3f9;
 
-    --sizing-min-width: 340px;
+    --sizing-min-width: 320px;
     --sizing-max-width: 1200px;
 }
 
@@ -78,6 +26,21 @@ body {
 img .-lg {
     width: 100%;
     height: auto;
+}
+
+.svg-primary {
+    fill: var(--color-primary);
+    stroke: var(--color-primary)
+}
+
+.svg-secondary {
+    fill: var(--color-secondary);
+    stroke: var(--color-secondary)
+}
+
+.svg-tertiary {
+    fill: var(--color-tertiary);
+    stroke: var(--color-tertiary)
 }
 
 a, button:not([disabled]):focus {

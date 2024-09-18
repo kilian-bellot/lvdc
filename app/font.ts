@@ -1,4 +1,4 @@
-import {Dancing_Script, Poppins} from "next/font/google";
+import {Dancing_Script, Newsreader, Poppins} from "next/font/google";
 
 export const poppins = Poppins({
   weight: ["500", "700"],
@@ -7,7 +7,13 @@ export const poppins = Poppins({
   variable: '--font-poppins',
 });
 
-export const pacifico = Dancing_Script({
+export const dancingScript = Dancing_Script({
   weight: "500",
   subsets: ["latin"],
-})
+});
+
+export const newsReader = Newsreader({
+  weight: "400",
+  style: "italic",
+  subsets: ["latin"],
+});
