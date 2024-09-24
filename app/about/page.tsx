@@ -2,8 +2,45 @@ import Image from "next/image";
 import Icon from "@app/_components/Icon";
 import Section from "@app/_components/Section";
 import Page from "@app/_components/Page";
+import PhotoBook from "@app/_components/PhotoBook";
 import mainImage from "@/public/assets/about/me-main.jpg";
+import usaImage from "@/public/assets/about/me-usa.jpg";
+import mauriceIsleImage from "@/public/assets/about/me-maurice-isle.jpg";
+import quebecImage from "@/public/assets/about/me-quebec.jpg";
+import sriLankaImage from "@/public/assets/about/me-sri-lanka.jpg";
 
+const photoBookImages = [
+  {
+    name: "maurice",
+    src: mauriceIsleImage,
+    alt: "photo de Charlène à l'île Maurice",
+    location: "île Maurice",
+    arrowPosition: "bottom",
+    rotation: "-10"
+  },
+  {
+    name: "quebec", src: quebecImage,
+    alt: "photo de Charlène au Québec",
+    location: "Québec",
+    arrowPosition: "top",
+    rotation: "10"
+  },
+  {
+    name: "usa", src: usaImage,
+    alt: "photo de Charlène aux États-Unis",
+    location: "États-Unis",
+    arrowPosition: "top",
+    rotation: "-10"
+  },
+  {
+    name: "sri-lanka",
+    src: sriLankaImage,
+    alt: "photo de Charlène au Sri Lanka",
+    location: "Sri Lanka",
+    arrowPosition: "bottom",
+    rotation: "20"
+  },
+]
 export default function About() {
   return (
     <Page>
@@ -38,6 +75,9 @@ export default function About() {
           </p>
           <Icon name={"arabesque"} size={36} color={"tertiary"} className={"mx-auto w-full"}/>
         </div>
+      </Section>
+      <Section>
+        <PhotoBook images={photoBookImages}/>
       </Section>
     </Page>
   )
