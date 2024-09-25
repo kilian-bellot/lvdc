@@ -31,9 +31,8 @@ export default function Home() {
         </div>
       </Section>
       <Section title="Qu'est-ce qu'un travel planner?" className={"flex flex-col md:flex-row"}>
-        <TravelPlanner imagePath={easterIsleImage} alt={"statues Moaï sur l'île de paques"}
-                       reverse={true}>
-          <p>
+        <TravelPlanner image={easterIsleImage} alt={"statues Moaï sur l'île de paques"}>
+          <p className={"mb-4"}>
             Un travel planner est un expert en organisation de voyage qui vous aide à la préparation de vos prochaines
             vacances dans le monde entier.
           </p>
@@ -47,7 +46,7 @@ export default function Home() {
           </p>
         </TravelPlanner>
         <span className={"border-b-2 border-secondary sm:border-r-2"}/>
-        <TravelPlanner imagePath={maldivesImage} alt={"une ile des maldives"}>
+        <TravelPlanner image={maldivesImage} alt={"une ile des maldives"} reverse={true}>
           <p>
             En tant que travel planner, j’ai à cœur de trouver les meilleures prestations pour rendre votre voyage
             inoubliable. Je consacre de nombreuses heures à effectuer des recherches approfondies afin de vous offrir

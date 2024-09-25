@@ -40,7 +40,7 @@ export default function Timeline() {
       <div
         className={"grid grid-rows-5 gap-y-48 md:gap-y-0 md:grid-rows-none md:grid-cols-5 border-l-4 md:border-l-0 md:border-t-4 border-primary h-full md:h-0 md:w-full md:max-w-[1600px] md:px-8 lg:px-0"}>
         {timelineItems.map(({...props}, index) =>
-          <TimelineItem key={props.title} {...props} index={index}/>
+          <TimelineItem key={index} {...props} index={index}/>
         )}
       </div>
     </div>

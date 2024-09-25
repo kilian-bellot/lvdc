@@ -10,7 +10,7 @@ export default function Footer() {
           Tous droits réservés.
         </p>
         <p>
-          Toute reproduction interdite.
+          Toute reproduction est interdite.
         </p>
         <p>
           ©2024 Les voyages de Charlène
