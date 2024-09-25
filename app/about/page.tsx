@@ -49,7 +49,7 @@ export default function About() {
     <Page>
       <Section className={"flex flex-col lg:flex-row p-12 bg-primary items-stretch text-center"}>
         <Image src={mainImage} alt="photo professionelle de Charlène" className={"lg:w-1/2 object-cover mb-4 lg:mb-0"}/>
-        <div className={"flex flex-col items-center gap-y-6 text-center text-tertiary lg:px-8"}>
+        <div className={"flex flex-col items-center gap-y-6 justify-center text-center text-tertiary lg:px-8"}>
           <p>Je m'appelle <span className={"text-secondary"}>Charlène</span>,
             je suis française (plus précisément de Bourgogne) et expatriée au
             Québec depuis 2019. Maman d’un petit garçon, j’ai à cœur de lui partager et lui transmettre ma passion du
@@ -84,7 +84,7 @@ export default function About() {
       </Section>
       <Section className={"flex flex-col items-center"}>
         <div className={"flex mb-8"}>
-          <div className={"flex flex-col px-4 items-center"}>
+          <div className={"flex flex-col px-4 items-center justify-center"}>
             <p className={"p-4 text-lg sm:text-2xl text-center"}>
               Certains des voyages les plus mémorables commencent par une simple
               discussion.
@@ -97,7 +97,8 @@ export default function About() {
                    className={"h-fit"}/>
           </div>
         </div>
-        <Link href={"/contact"} className={"flex w-48 rounded-full bg-secondary p-4 text-center text-tertiary italic"}>
+        <Link href={"/contact"}
+              className={"flex w-48 rounded-full bg-secondary py-2 justify-center text-center text-tertiary italic"}>
           Planifier mon voyage
         </Link>
       </Section>

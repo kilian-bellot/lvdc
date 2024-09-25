@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <Page>
       <Section
-        className={"relative p-4 pt-0 sm:p-20 sm:pt-0 bg-gradient-to-b from-tertiary to-50% from-50% to-primary"}>
+        className={"flex relative p-4 pt-0 sm:p-20 sm:pt-0 bg-gradient-to-b from-tertiary to-50% from-50% to-primary justify-center"}>
         <Image src={landscapeImage} alt="paysage alpin"
                className="border-4 border-tertiary" width="1280" height="800"/>
         <div
@@ -81,10 +81,11 @@ export default function Home() {
       <Section title={"Comment ça fonctionne ?"}>
         <Timeline/>
       </Section>
-      <Section className={"relative flex flex-col bg-neutral rounded-md py-4 px-16 items-center gap-y-4"}>
+      <Section className={"relative flex flex-col w-fit mx-auto bg-neutral rounded-md py-4 px-16 items-center gap-y-4"}>
         <p>Prêt à vous lancer dans la création d’un voyage sur mesure ?</p>
         <p className={"font-bold"}>N’attendez plus, le premier rendez-vous est gratuit !</p>
-        <Link href="/contact" className={"flex w-48 rounded-full bg-secondary py-2 text-center text-tertiary italic"}>
+        <Link href="/contact"
+              className={"flex w-48 rounded-full bg-secondary py-2 justify-center text-center text-tertiary italic"}>
           Afficher mes disponibilités
         </Link>
         <Icon name={"stamp"} size={72} className={"hidden sm:block absolute bottom-4 right-4"}/>
