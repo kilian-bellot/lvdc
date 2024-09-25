@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Icon from "@app/_components/Icon";
 import Section from "@app/_components/Section";
 import Page from "@app/_components/Page";
@@ -8,6 +9,8 @@ import usaImage from "@/public/assets/about/me-usa.jpg";
 import mauriceIsleImage from "@/public/assets/about/me-maurice-isle.jpg";
 import quebecImage from "@/public/assets/about/me-quebec.jpg";
 import sriLankaImage from "@/public/assets/about/me-sri-lanka.jpg";
+import worldMapImage from "@/public/assets/about/world-map.png";
+import directionsImage from "@/public/assets/about/directions.png";
 
 const photoBookImages = [
   {
@@ -78,6 +81,25 @@ export default function About() {
       </Section>
       <Section>
         <PhotoBook images={photoBookImages}/>
+      </Section>
+      <Section className={"flex flex-col items-center"}>
+        <div className={"flex mb-8"}>
+          <div className={"flex flex-col px-4 items-center"}>
+            <p className={"p-4 text-lg sm:text-2xl text-center"}>
+              Certains des voyages les plus mémorables commencent par une simple
+              discussion.
+            </p>
+            <Image src={directionsImage} alt={"carte du monde"}
+                   className={"w-2/3 sm:w-auto p-4"}/>
+          </div>
+          <div className={"hidden sm:flex items-center"}>
+            <Image src={worldMapImage} alt={"image de panneaux de différentes destinations"}
+                   className={"h-fit"}/>
+          </div>
+        </div>
+        <Link href={"/contact"} className={"flex w-48 rounded-full bg-secondary p-4 text-center text-tertiary italic"}>
+          Planifier mon voyage
+        </Link>
       </Section>
     </Page>
   )
