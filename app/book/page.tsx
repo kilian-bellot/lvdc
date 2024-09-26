@@ -1,47 +1,54 @@
 import Page from "@app/_components/Page";
-import Section from "@app/_components/Section";
 
 export default function Book() {
   return (
     <Page>
-      <Section title={"Pourquoi un carnet de voyage personnalisé?"}>
-        <p>
-          Nous pourrions vous faire une longue liste avec toutes nos propositions, mais sincèrement vous méritez mieux.
-          Créa-voyages souhaite vous donner envie de vous projeter, commencer à rêver de ce voyage. Nous essayons de
-          rendre
-          nos
-          guides personnalisés agréables à la lecture.
-          Vous en recevrez une version numérique facile à sauvegarder et si vous le souhaitez une version papier
-          (moyennant
-          un surcoût).
-          Il vous facilitera le voyage et sa préparation.
-        </p>
-        <p>Quand réalisons-nous votre carnet de voyage personnalisé ?</p>
-        <p>
-          Une fois votre voyage validé, Créa-voyages réalise votre carnet de voyage personnalisé en y incluant les
-          réservations
-          que vous avez effectuées directement suite à nos propositions.
-        </p>
-        <p>Que contient votre carnet de voyage personnalisé ?</p>
-        <p>
-          Bien entendu selon votre voyage, sa durée, les pays visités les contenus vont un peu varier. Vous y
-          retrouverez
-          les hébergements, informations sur vos transports, réservations d’activités, de guides, des mémos sur votre
-          destination, des outils pratiques pour vous aider avant et pendant le voyage tels que des to-do-lists pour
-          faire
-          son sac ou une page de pictogrammes pour aider à converser quand vous ne connaissez pas la langue.
-          Pour les itinéraires et informations cartographiés nous avons choisi de les insérer à une carte reliée à
-          Google
-          map, plutôt que d’ajouter cette donnée au carnet de voyage.
-        </p>
-
-      </Section>
-      <Section title={"Votre carnet de voyage personnalisé"}>
-        <p>
-          Exemple d’un carnet de voyage pour un séjour à Lisbonne
-        </p>
-        <p>En cours de rédaction...</p>
-      </Section>
+      {/*<Section title={"Votre carnet de voyage"} className={"flex flex-col md:flex-row"}>*/}
+      {/*  <MediaTextColumnLayout image={easterIsleImage} alt={"statues Moaï sur l'île de paques"}>*/}
+      {/*    <p>*/}
+      {/*      Pour chaque voyage conçu avec moi, vous recevez un carnet de voyage 100% personnalisé, réalisé uniquement*/}
+      {/*      pour votre voyage.*/}
+      {/*    </p>*/}
+      {/*    <p>*/}
+      {/*      Je m'assure que mes carnets soient à la fois riches en informations et agréables à lire. Vous recevrez une*/}
+      {/*      version numérique, facile à sauvegarder et à consulter. Ce guide vous facilitera l'organisation de votre*/}
+      {/*      voyage et vous aidera à en maximiser les expériences.*/}
+      {/*    </p>*/}
+      {/*  </MediaTextColumnLayout>*/}
+      {/*  <Divider/>*/}
+      {/*  <MediaTextColumnLayout image={maldivesImage} alt={"une ile des maldives"} reverse={true}>*/}
+      {/*    <p className={"font-bold"}>*/}
+      {/*      Quand allez-vous recevoir votre carnet de voyage personnalisé ?*/}
+      {/*    </p>*/}
+      {/*    <p>*/}
+      {/*      Une fois votre voyage validé, je réalise votre carnet de voyage en y incluant les réservations que vous avez*/}
+      {/*      effectuées directement suite à mes propositions. Je m’engage à vous le transmettre au moins 15 jours avant*/}
+      {/*      votre départ en voyage.*/}
+      {/*    </p>*/}
+      {/*  </MediaTextColumnLayout>*/}
+      {/*</Section>*/}
+      {/*<Section>*/}
+      {/*  <p className={"font-bold"}>*/}
+      {/*    Que contient votre carnet de voyage personnalisé ?*/}
+      {/*  </p>*/}
+      {/*  <p>*/}
+      {/*    Selon votre voyage, sa durée et le(s) pays visité(s), le contenu peut légèrement varier.*/}
+      {/*  </p>*/}
+      {/*  <p>*/}
+      {/*    Vous y trouverez les informations suivantes :*/}
+      {/*  </p>*/}
+      {/*  <ul>*/}
+      {/*    <li>Les étapes clés de votre voyage ;</li>*/}
+      {/*    <li>Vos hébergements ;</li>*/}
+      {/*    <li>Vos transports ;</li>*/}
+      {/*    <li>Vos réservations d'activités et excursions ;</li>*/}
+      {/*    <li>Des bonnes adresses ;</li>*/}
+      {/*    <li>Des conseils pratiques sur votre destination ;</li>*/}
+      {/*    <li>Une liste de choses à faire pour préparer votre bagage ;</li>*/}
+      {/*    <li>Une carte interactive totalement personnalisée.</li>*/}
+      {/*  </ul>*/}
+      {/*</Section>*/}
+      WIP...
     </Page>
   );
 }

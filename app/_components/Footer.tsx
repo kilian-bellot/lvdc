@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer
-      className="flex flex-col sm:flex-row w-full bottom-0 bg-primary p-2 text-tertiary justify-between gap-y-4 text-xs">
+      className="flex flex-col sm:flex-row w-full bottom-0 bg-primary p-2 mt-4 text-tertiary justify-between gap-y-4 text-xs">
       <div className={"flex flex-col order-3 sm:order-1"}>
         <p>
           Tous droits réservés.
@@ -21,19 +21,19 @@ export default function Footer() {
           Retrouvez moi sur
         </p>
         <span className={"flex justify-center gap-2"}>
-          <Link href={"https://facebook.com"}>
+          <Link href={"https://facebook.com"} aria-label={"facebook"}>
             <Icon name={"facebook"} size={36} color={"secondary"}/>
           </Link>
-          <Link href={"https://instagram.com"} passHref={true}>
+          <Link href={"https://instagram.com"} aria-label={"instagram"}>
             <Icon name={"instagram"} size={36} color={"secondary"}/>
           </Link>
         </span>
       </div>
-      <div className={"flex flex-col order-2 sm:order-3"}>
-        <Link href={"/policy/privacy"}>
+      <div className={"flex flex-col order-2 sm:order-3 justify-around gap-y-2"}>
+        <Link href={"/"} className={"underline underline-offset-2"}>
           Politique de confidentialité
         </Link>
-        <Link href={"/policy/terms-and-conditions"}>
+        <Link href={"/"} className={"underline underline-offset-2"}>
           Conditions générales de ventes
         </Link>
       </div>

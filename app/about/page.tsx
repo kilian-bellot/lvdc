@@ -48,10 +48,10 @@ export default function About() {
   return (
     <Page>
       <Section className={"flex flex-col lg:flex-row p-12 bg-primary items-stretch text-center"}>
-        <Image src={mainImage} alt="photo professionelle de Charlène" className={"lg:w-1/2 object-cover mb-4 lg:mb-0"}/>
+        <Image src={mainImage} alt="photo professionelle de Charlène" priority={true} className={"lg:w-1/2 object-cover mb-4 lg:mb-0"}/>
         <div className={"flex flex-col items-center gap-y-6 justify-center text-center text-tertiary lg:px-8"}>
           <p>Je m'appelle <span className={"text-secondary"}>Charlène</span>,
-            je suis française (plus précisément de Bourgogne) et expatriée au
+            je suis française (plus précisément bourguignonne) et expatriée au
             Québec depuis 2019. Maman d’un petit garçon, j’ai à cœur de lui partager et lui transmettre ma passion du
             voyage.
           </p>
