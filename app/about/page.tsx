@@ -4,13 +4,13 @@ import Icon from "@app/_components/Icon";
 import Section from "@app/_components/Section";
 import Page from "@app/_components/Page";
 import PhotoBook from "@app/_components/PhotoBook";
-import mainImage from "@/public/assets/about/me-main.jpg";
-import usaImage from "@/public/assets/about/me-usa.jpg";
-import mauriceIsleImage from "@/public/assets/about/me-maurice-isle.jpg";
-import quebecImage from "@/public/assets/about/me-quebec.jpg";
-import sriLankaImage from "@/public/assets/about/me-sri-lanka.jpg";
-import worldMapImage from "@/public/assets/about/world-map.png";
-import directionsImage from "@/public/assets/about/directions.png";
+import mainImage from "@/public/assets/about/me-main.webp";
+import usaImage from "@/public/assets/about/me-usa.webp";
+import mauriceIsleImage from "@/public/assets/about/me-maurice-isle.webp";
+import quebecImage from "@/public/assets/about/me-quebec.webp";
+import sriLankaImage from "@/public/assets/about/me-sri-lanka.webp";
+import worldMapImage from "@/public/assets/about/world-map.webp";
+import directionsImage from "@/public/assets/about/directions.webp";
 
 const photoBookImages = [
   {
@@ -48,7 +48,7 @@ export default function About() {
   return (
     <Page>
       <Section className={"flex flex-col lg:flex-row p-12 bg-primary items-stretch text-center"}>
-        <Image src={mainImage} alt="photo professionelle de Charlène" priority={true} className={"lg:w-1/2 object-cover mb-4 lg:mb-0"}/>
+        <Image src={mainImage} alt="photo professionelle de Charlène" priority className={"lg:w-1/2 object-cover mb-4 lg:mb-0"}/>
         <div className={"flex flex-col items-center gap-y-6 justify-center text-center text-tertiary lg:px-8"}>
           <p>Je m'appelle <span className={"text-secondary"}>Charlène</span>,
             je suis française (plus précisément bourguignonne) et expatriée au

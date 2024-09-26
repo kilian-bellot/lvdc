@@ -16,7 +16,7 @@ export default function Book() {
       {/*    </p>*/}
       {/*  </MediaTextColumnLayout>*/}
       {/*  <Divider/>*/}
-      {/*  <MediaTextColumnLayout image={maldivesImage} alt={"une ile des maldives"} reverse={true}>*/}
+      {/*  <MediaTextColumnLayout image={maldivesImage} alt={"une ile des maldives"} reverse>*/}
       {/*    <p className={"font-bold"}>*/}
       {/*      Quand allez-vous recevoir votre carnet de voyage personnalisé ?*/}
       {/*    </p>*/}

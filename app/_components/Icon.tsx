@@ -16,7 +16,6 @@ import PlanningCheckSvg from "@/public/assets/icons/home/planning-check.svg"
 import PuzzleSvg from "@/public/assets/icons/home/puzzle.svg"
 import QuoteSvg from "@/public/assets/icons/home/quote.svg"
 import SpeedClockSvg from "@/public/assets/icons/home/speed-clock.svg"
-import StampSvg from "@/public/assets/icons/home/stamp.svg"
 import TrustSvg from "@/public/assets/icons/home/trust.svg"
 import FacebookSvg from "@/public/assets/icons/facebook.svg"
 import InstagramSvg from "@/public/assets/icons/instagram.svg"
@@ -40,7 +39,6 @@ const icons = {
   "puzzle": PuzzleSvg,
   "quote": QuoteSvg,
   "speed-clock": SpeedClockSvg,
-  "stamp": StampSvg,
   "trust": TrustSvg,
   "facebook": FacebookSvg,
   "instagram": InstagramSvg,

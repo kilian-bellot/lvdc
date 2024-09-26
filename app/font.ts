@@ -10,10 +10,12 @@ export const poppins = Poppins({
 export const dancingScript = Dancing_Script({
   weight: "500",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const newsReader = Newsreader({
   weight: "400",
   style: "italic",
   subsets: ["latin"],
+  display: "swap",
 });

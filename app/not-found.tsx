@@ -1,5 +1,5 @@
 import Image from "next/image";
-import notFoundImage from "@/public/assets/404.png";
+import notFoundImage from "@/public/assets/404.webp";
 import Page from "@app/_components/Page";
 
 export default function NotFound() {

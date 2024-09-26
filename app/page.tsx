@@ -7,9 +7,10 @@ import Strength from "@/app/_components/Strength";
 import Timeline from "@app/_components/Timeline";
 import MediaTextColumnLayout from "@app/_components/MediaTextColumnLayout";
 import Icon from "@app/_components/Icon";
-import landscapeImage from "@/public/assets/home/landscape.png";
-import easterIsleImage from "@/public/assets/home/easter-isle.png";
-import maldivesImage from "@/public/assets/home/maldives.png";
+import landscapeImage from "@/public/assets/home/landscape.webp";
+import easterIsleImage from "@/public/assets/home/easter-isle.webp";
+import maldivesImage from "@/public/assets/home/maldives.webp";
+import stampImage from "@/public/assets/home/stamp.webp";
 import Divider from "@app/_components/Divider";
 
 export default function Home() {
@@ -17,8 +18,8 @@ export default function Home() {
     <Page>
       <Section
         className={"flex relative max-h-[90vh] p-4 pt-0 sm:p-20 sm:pt-0 bg-gradient-to-b from-tertiary to-50% from-50% to-primary justify-center"}>
-        <Image src={landscapeImage} alt="paysage alpin" sizes="100vw" priority={true} placeholder={"blur"}
-               className="border-4 border-tertiary" width="1280" height="800" style={{objectFit: "cover"}}/>
+        <Image src={landscapeImage} alt="paysage alpin" sizes="100vw" priority placeholder={"blur"}
+               className="border-4 border-tertiary" style={{objectFit: "cover"}}/>
         <div
           className={`absolute bottom-6 left-1/2 translate-x-[-50%] z-10 w-4/5 sm:w-1/2 px-2 sm:px-6 py-1 bg-tertiary opacity-90 text-center`}>
           <h2 className={`flex flex-col items-center text-lg sm:text-2xl`}>
@@ -32,7 +33,7 @@ export default function Home() {
         </div>
       </Section>
       <Section title="Qu'est-ce qu'un travel planner?" className={"flex flex-col md:flex-row"}>
-        <MediaTextColumnLayout image={easterIsleImage} alt={"statues Moaï sur l'île de paques"}>
+        <MediaTextColumnLayout image={easterIsleImage} alt={"statues Moaï sur l'île de paques"} priority>
           <p className={"mb-4"}>
             Un travel planner est un expert en organisation de voyage qui vous aide à la préparation de vos prochaines
             vacances dans le monde entier.
@@ -47,7 +48,7 @@ export default function Home() {
           </p>
         </MediaTextColumnLayout>
         <Divider/>
-        <MediaTextColumnLayout image={maldivesImage} alt={"une ile des maldives"} reverse={true}>
+        <MediaTextColumnLayout image={maldivesImage} alt={"une ile des maldives"} priority reverse>
           <p>
             En tant que travel planner, j’ai à cœur de trouver les meilleures prestations pour rendre votre voyage
             inoubliable. Je consacre de nombreuses heures à effectuer des recherches approfondies afin de vous offrir
@@ -88,7 +89,7 @@ export default function Home() {
               className={"flex w-48 rounded-full bg-secondary py-2 justify-center text-center text-tertiary italic"}>
           Afficher mes disponibilités
         </Link>
-        <Icon name={"stamp"} size={72} className={"hidden sm:block absolute bottom-4 right-4"}/>
+        <Image src={stampImage} height={72} width={72} alt={"tampon"} className={"hidden sm:block absolute bottom-4 right-4"}/>
       </Section>
       <Section>
         <Icon name={"quote"} size={48} className={"w-full mb-12"}/>

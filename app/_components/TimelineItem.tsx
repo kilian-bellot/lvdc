@@ -15,7 +15,7 @@ export default function TimelineItem({title, text, icon, index}) {
         className={`flex flex-col w-[70vw] md:w-52 absolute p-1 sm:p-2 border-2 border-secondary rounded-xl text-center justify-center ${containerInset}`}>
         <span className={"flex items-center mx-auto mb-1"}>
           <Icon name={icon} className={"mx-2"}/>
-          <h3 className={"font-bold"}>{title}</h3>
+          <h4 className={"font-bold"}>{title}</h4>
         </span>
         <p className={"text-md leading-4"}>{text}</p>
       </div>
