@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Header from "@/app/_components/Header";
 import Footer from "@/app/_components/Footer";
-import landscapeImage from "@/public/assets/home/landscape.png";
 import {poppins} from "@app/font";
 import "./globals.css";
 
@@ -13,7 +12,7 @@ export default function RootLayout({children}: Readonly<{
     <Head>
       <link
         rel="preload"
-        href={landscapeImage}
+        href={"/assets/home/landscape.png"}
         as="image"
       />
     </Head>
