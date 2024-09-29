@@ -9,7 +9,7 @@ const timelineItems = [
   },
   {
     title: "Proposition d'itinéraire",
-    text: "Après avoir étudier votre projet, je vous enverrai une première ébauche de l'itinéraire pour que vous puissiez commencer à visualiser votre voyage.",
+    text: "Après avoir étudié votre projet, je vous enverrai une première ébauche de l'itinéraire pour que vous puissiez commencer à visualiser votre voyage.",
     icon: "check-list",
     iconPosition: "bottom-left"
   },

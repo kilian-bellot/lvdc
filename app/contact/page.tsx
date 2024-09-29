@@ -1,9 +1,11 @@
 import Page from "@app/_components/Page";
 import Section from "@app/_components/Section";
 import NumberedTitle from "@app/_components/NumberedTitle";
-import Input from "@app/_components/Input";
+import Icon from "@app/_components/Icon";
+import ContactForm from "@app/_components/ContactForm";
 
 export default function Contact() {
+
   return (
     <Page>
       <Section className={"flex flex-col items-center"}>
@@ -31,17 +33,13 @@ export default function Contact() {
           </div>
         </div>
       </Section>
+      <Section className={"flex justify-center"}>
+        <Icon name={"or"} size={76} color={"secondary"}/>
+      </Section>
       <Section className={"flex flex-col items-center"}>
         <NumberedTitle number={2} text={"Le formulaire de contact"}/>
-        <div className={"flex w-full border-4 border-primary rounded-2xl"}>
-          <form action="mailto:info@charlene-voyages.com" method="GET">
-            <Input name="firstname" type="text" placeholder={"Prénom"} className={""}/>
-            <Input name="lastname" type="text" placeholder={"Nom"} className={""}/>
-            <Input name="email" type="text" placeholder={"E-mail"} className={""}/>
-            <Input name="subject" type="text" placeholder={"Voyage au Canada"} className={""}/>
-            <textarea name="body"></textarea>
-            <Input type="submit" value="Envoyer l'e-mail" className={""}/>
-          </form>
+        <div className={"flex w-full xl:w-1/2 border-4 border-primary rounded-2xl"}>
+          <ContactForm />
         </div>
       </Section>
     </Page>
