@@ -10,7 +10,7 @@ export default function RootLayout({children}: Readonly<{
   return (
     <html lang="fr" className={poppins.className}>
     <head>
-      <link rel="icon" href="/assets/logo.svg"/>
+      <link rel="icon" href="/favicon.ico"/>
       <title>Les voyages de Charlène</title>
       <meta httpEquiv="content-language" content="fr"/>
       <meta name="keywords" content="voyage, tourisme, itinéraire, canada, vacances, expertise, agence, travel, planner"/>

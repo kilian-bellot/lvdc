@@ -17,6 +17,7 @@ import PuzzleSvg from "@/public/assets/icons/home/puzzle.svg"
 import QuoteSvg from "@/public/assets/icons/home/quote.svg"
 import SpeedClockSvg from "@/public/assets/icons/home/speed-clock.svg"
 import TrustSvg from "@/public/assets/icons/home/trust.svg"
+import DividerSvg from "@/public/assets/icons/price/divider.svg"
 import FacebookSvg from "@/public/assets/icons/facebook.svg"
 import InstagramSvg from "@/public/assets/icons/instagram.svg"
 
@@ -40,6 +41,7 @@ const icons = {
   "quote": QuoteSvg,
   "speed-clock": SpeedClockSvg,
   "trust": TrustSvg,
+  "divider": DividerSvg,
   "facebook": FacebookSvg,
   "instagram": InstagramSvg,
 };

@@ -1,3 +1,3 @@
 export default function Divider() {
-  return <span className={"border-b-4 border-secondary sm:border-r-4"}/>
+  return <div className={`border-b-4 sm:border-r-4 border-secondary`}/>
 }
