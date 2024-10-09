@@ -18,7 +18,7 @@ export default function Home() {
     <Page>
       <Section
         className={"flex relative max-h-[90vh] p-4 pt-0 sm:p-20 sm:pt-0 bg-gradient-to-b from-tertiary to-50% from-50% to-primary justify-center"}>
-        <Image src={landscapeImage} alt="paysage alpin" sizes="100vw" priority placeholder={"blur"}
+        <Image src={landscapeImage} alt="paysage alpin" priority placeholder={"blur"}
                className="border-4 border-tertiary" style={{objectFit: "cover"}}/>
         <div
           className={`absolute bottom-6 left-1/2 translate-x-[-50%] z-10 w-4/5 sm:w-1/2 px-2 sm:px-6 py-1 bg-tertiary opacity-90 text-center`}>

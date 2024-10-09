@@ -10,19 +10,19 @@ export default function Book() {
     <Page>
       <Section title={"Votre carnet de voyage"} className={"flex flex-col md:flex-row"}>
         <MediaTextColumnLayout image={elephantImage} alt={"une famille d'éléphants"}>
-          <p>
+          <p className={"mb-8"}>
             Pour chaque itinéraire que nous concevons ensemble, vous recevrez un carnet de voyage 100% personnalisé
           </p>
-          <p>
+          <p className={"mb-8"}>
             Je m'assure que mes carnets soient à la fois riches en informations et agréables à lire. Vous recevrez une version numérique, facile à sauvegarder et à consulter.
           </p>
-          <p>
+          <p className={"mb-8"}>
             Ce guide vous facilitera l'organisation de votre voyage et vous aidera à en maximiser les expériences.
           </p>
         </MediaTextColumnLayout>
         <Divider/>
         <MediaTextColumnLayout image={athenImage} alt={"une ile des maldives"} reverse>
-          <p className={"font-bold"}>
+          <p className={"mb-8 font-bold"}>
             Quand allez-vous recevoir votre carnet de voyage ?
           </p>
           <p>
