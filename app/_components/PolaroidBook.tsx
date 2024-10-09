@@ -48,7 +48,7 @@ const labelStyleByArrowPosition = (position) => {
 
 const rotateStyle = (angle) => `rotate(${angle}deg)`
 
-export default function PhotoBook({images}) {
+export default function PolaroidBook({images}) {
   return (
     <div
       className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 sm:grid-rows-[400px] w-full px-8 pt-10 pb-20 sm:pt-4 md:pb-4 justify-items-center items-center bg-primary gap-y-32`}>

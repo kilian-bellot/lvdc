@@ -3,7 +3,7 @@ import Link from "next/link";
 import Icon from "@app/_components/Icon";
 import Section from "@app/_components/Section";
 import Page from "@app/_components/Page";
-import PhotoBook from "@app/_components/PhotoBook";
+import PolaroidBook from "@app/_components/PolaroidBook";
 import mainImage from "@/public/assets/about/me-main.webp";
 import usaImage from "@/public/assets/about/me-usa.webp";
 import mauriceIsleImage from "@/public/assets/about/me-maurice-isle.webp";
@@ -80,7 +80,7 @@ export default function About() {
         </div>
       </Section>
       <Section>
-        <PhotoBook images={photoBookImages}/>
+        <PolaroidBook images={photoBookImages}/>
       </Section>
       <Section className={"flex flex-col items-center"}>
         <div className={"flex mb-8"}>

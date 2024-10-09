@@ -4,6 +4,7 @@ import MediaTextColumnLayout from "@app/_components/MediaTextColumnLayout";
 import elephantImage from "@/public/assets/book/elephant.png";
 import athenImage from "@/public/assets/book/athen.png";
 import Divider from "@app/_components/Divider";
+import TripBook from "@app/_components/TripBook";
 
 export default function Book() {
   return (
@@ -50,6 +51,9 @@ export default function Book() {
       {/*    <li>Une liste de choses à faire pour préparer votre bagage ;</li>*/}
       {/*    <li>Une carte interactive totalement personnalisée.</li>*/}
       {/*  </ul>*/}
+      {/*</Section>*/}
+      {/*<Section title={"Exemple d'un cart de voyage pour un séjour à Lisbonne"}>*/}
+      {/*  <TripBook/>*/}
       {/*</Section>*/}
     </Page>
   );
