@@ -3,15 +3,15 @@ import Section from "@app/_components/Section";
 import NumberedTitle from "@app/_components/NumberedTitle";
 import Icon from "@app/_components/Icon";
 import ContactForm from "@app/_components/ContactForm";
+import Calendar from "@app/_components/Calendar";
 
 export default function Contact() {
-
   return (
     <Page>
       <Section className={"flex flex-col items-center"}>
         <NumberedTitle number={1} text={"Le rendez-vous en ligne"}/>
-        <div className={"flex"}>
-          <div className={"flex flex-col w-1/3 self-start items-center text-center"}>
+        <div className={"flex flex-col sm:flex-row"}>
+          <div className={"flex flex-col sm:w-1/3 items-center justify-center text-center"}>
             <h3 className={"font-bold"}>Appel découverte</h3>
             <p className={"mb-4"}>30min</p>
             <div className={"flex flex-col gap-y-8"}>
@@ -28,8 +28,8 @@ export default function Contact() {
               </p>
             </div>
           </div>
-          <div className={"flex w-2/3 items-center justify-center"}>
-            WIP...
+          <div className={"flex w-full sm:w-2/3 items-center justify-center"}>
+            <Calendar />
           </div>
         </div>
       </Section>
