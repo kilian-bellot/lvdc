@@ -2,17 +2,13 @@
 import Input from "@app/_components/Input";
 import {sendEmail} from "@app/action";
 import {useFormStatus} from "react-dom";
-import {useEffect, useState} from "react";
+import {useState} from "react";
 
 export default function ContactForm() {
-  const [ submitted, setSubmitted ] = useState(false)
   const { pending } = useFormStatus()
+  const [ submitted, setSubmitted ] = useState(false)
 
-  useEffect(() => {
-    if(submitted && !pending) {
-      console.log("finished => show confirmation message")
-    }
-  }, [submitted, pending])
+  if(submitted || pending) return <div className={"p-4"}>Message envoyé!</div>;
 
   return (
     <form action={sendEmail} onSubmit={() => {setSubmitted(true)}} className={"w-full p-4"}>
@@ -26,7 +22,7 @@ export default function ContactForm() {
              className={"w-full min-h-48 border-2 border-neutral p-1"}
              placeholder={"N'oubliez pas de partager tout ce qui pourra être utile à la préparation de notre échange (destination, dates...)"}
              required />
-      <Input type="submit" value="Envoyer" disabled={pending} className={"w-1/2 px-8 py-4 text-tertiary uppercase"}
+      <Input type="submit" value="Envoyer" disabled={submitted || pending} className={"w-1/2 px-8 py-4 text-tertiary uppercase"}
              readOnly />
     </form>
   )
