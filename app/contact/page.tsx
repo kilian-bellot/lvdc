@@ -11,7 +11,7 @@ export default function Contact() {
       <Section className={"flex flex-col items-center"}>
         <NumberedTitle number={1} text={"Le rendez-vous en ligne"}/>
         <div className={"flex flex-col sm:flex-row"}>
-          <div className={"flex flex-col sm:w-1/3 items-center justify-center text-center"}>
+          <div className={"flex flex-col sm:w-1/3 items-center justify-center text-center p-4"}>
             <h3 className={"font-bold"}>Appel découverte</h3>
             <p className={"mb-4"}>30min</p>
             <div className={"flex flex-col gap-y-8"}>
@@ -38,7 +38,7 @@ export default function Contact() {
       </Section>
       <Section className={"flex flex-col items-center"}>
         <NumberedTitle number={2} text={"Le formulaire de contact"}/>
-        <div className={"flex w-full xl:w-1/2 border-4 border-primary rounded-2xl"}>
+        <div className={"flex w-full xl:w-1/2 rounded-2xl"}>
           <ContactForm />
         </div>
       </Section>

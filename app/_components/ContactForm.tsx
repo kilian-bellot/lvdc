@@ -8,7 +8,7 @@ export default function ContactForm() {
   const { pending } = useFormStatus()
   const [ submitted, setSubmitted ] = useState(false)
 
-  if(submitted || pending) return <div className={"p-4"}>Message envoyé!</div>;
+  if(submitted || pending) return <div className={"p-4"}>Message envoyé !</div>;
 
   return (
     <form action={sendEmail} onSubmit={() => {setSubmitted(true)}} className={"w-full p-4"}>

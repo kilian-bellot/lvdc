@@ -1,6 +1,7 @@
 "use client";
 
 import {useRef} from "react";
+import Script from 'next/script'
 import useElementSize from "../_hooks/useElementSize";
 
 export default function Calendar() {
@@ -11,13 +12,10 @@ export default function Calendar() {
   const calendarHeight = 350;
 
   return <div ref={parentRef} className={"flex w-full"}>
-    <iframe
-      src="https://calendar.zohocloud.ca/zc/ui/embed/#calendar=zz0801123082fb56b12df6ac069e5cbeaa97a1b4fc95d3ba2624de77585279cca0db30f75b0071dd89c55a14d88d2843b27b3a0e6a&title=info&type=1&language=fr&timezone=Europe%2FParis&showTitle=0&showTimezone=1&startingDayOfWeek=1&timeFormat=1&view=month&showDetail=0&theme=1&showAttendee=0&showSwitchingViews=1&eventColorType=bold&showAllEvents=0&showLogo=0"
-      width={calendarWidth}
-      height={calendarHeight}
-      style={{border: 0, margin: 0, padding: 0}}
-      loading="lazy"
-      aria-hidden="false"
+    <div data-url="https://calendly.com/charlene-voyages-info/30min?hide_gdpr_banner=1"
+         data-resize="true"
+         className="calendly-inline-widget w-full max-h-[600px]"
     />
+    <Script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async/>
   </div>
 }
