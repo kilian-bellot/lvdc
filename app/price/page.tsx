@@ -11,12 +11,12 @@ export default function Price() {
       <Section title={"Quel est le tarif de mon accompagnement ?"} className={"flex flex-col sm:flex-row justify-center xl:gap-x-32"}>
         <div className={"flex items-center justify-center"}>
           <p className={"h-fit p-4 sm:px-8 bg-secondary text-tertiary text-center text-2xl"}>
-            <span className={"font-bold"}>15$ CAD</span> par jour de voyage
+            <span className={"font-bold"}>10$ CAD</span> par jour pour 10 jours de voyage
           </p>
         </div>
         <div className={"flex flex-col sm:w-2/3 xl:max-w-2xl p-4"}>
           <p>
-            Ce tarif est par jour pour un séjour de 8 jours et 4 personnes maximum.
+            Ce tarif est par jour pour un séjour de 10 jours et 4 personnes maximum.
           </p>
           <Icon name={"divider"} color={"secondary"} className={"my-8"}/>
           <h3 className={"mb-4 text-xl underline font-bold"}>Ce qui est inclus dans ce tarif :</h3>
