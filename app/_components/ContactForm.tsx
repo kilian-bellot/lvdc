@@ -22,7 +22,7 @@ export default function ContactForm() {
              className={"w-full min-h-48 border-2 border-neutral p-1"}
              placeholder={"N'oubliez pas de partager tout ce qui pourra être utile à la préparation de notre échange (destination, dates...)"}
              required />
-      <Input type="submit" value="Envoyer" disabled={submitted || pending} className={"w-1/2 px-8 py-4 text-tertiary uppercase"}
+      <Input type="submit" value="Envoyer" disabled={submitted || pending} className={"w-1/2 px-8 py-4 text-tertiary uppercase cursor-pointer hover:bg-lighter-primary"}
              readOnly />
     </form>
   )

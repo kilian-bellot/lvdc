@@ -30,10 +30,10 @@ export default function Footer() {
         </span>
       </div>
       <div className={"flex flex-col order-2 sm:order-3 justify-around gap-y-2"}>
-        <Link href={"/policy/pdc.pdf"} target={"blank"} className={"underline underline-offset-2"}>
+        <Link href={"/policy/pdc.pdf"} target={"blank"} className={"underline underline-offset-2 hover:text-secondary"}>
           Politique de confidentialité
         </Link>
-        <Link href={"/policy/cgs.pdf"} target={"blank"} className={"underline underline-offset-2"}>
+        <Link href={"/policy/cgs.pdf"} target={"blank"} className={"underline underline-offset-2 hover:text-secondary"}>
           Conditions générales de services
         </Link>
       </div>

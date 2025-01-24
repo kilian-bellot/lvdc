@@ -86,7 +86,7 @@ export default function Home() {
         <p>Prêt à vous lancer dans la création d’un voyage sur mesure ?</p>
         <p className={"font-bold"}>N’attendez plus, le premier rendez-vous est gratuit !</p>
         <Link href="/contact"
-              className={"flex w-48 rounded-full bg-secondary py-2 justify-center text-center text-tertiary italic"}>
+              className={"flex w-48 rounded-full bg-secondary py-2 justify-center text-center text-tertiary italic hover:bg-lighter-secondary"}>
           Afficher mes disponibilités
         </Link>
         <Image src={stampImage} height={72} width={72} alt={"tampon"} className={"hidden sm:block absolute bottom-4 right-4"}/>

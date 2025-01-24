@@ -13,6 +13,8 @@ const pages = [
   {title: "Contact", url: "/contact"},
 ]
 
+const contactHoverClass = ""
+
 export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
   const currentPage = usePathname();
@@ -52,7 +54,7 @@ export default function Header() {
           {pages.map(({title, url}) => {
             return (
               <li key={title}
-                  className={`
+                  className={`group
                     flex items-center text-center mx-4 sm:mx-2 lg:mx-4 tracking-wider
                     ${showMenu ? "w-full p-8 border-b border-solid border-secondary" : ""}
                     ${currentPage == url ? "font-bold" : ""}
@@ -60,6 +62,10 @@ export default function Header() {
                 <Link href={url}
                       className={title == "Contact" ? "bg-secondary text-tertiary rounded p-2 mx-0 leading-4" : ""}>
                   {title}
+                  <span className={`
+                      block max-w-0 group-hover:max-w-full transition-all duration-300 h-0.5 
+                      ${title == "Contact" ? "bg-tertiary" : "bg-secondary"}
+                    `}/>
                 </Link>
               </li>)
           })}

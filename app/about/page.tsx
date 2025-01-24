@@ -98,7 +98,7 @@ export default function About() {
           </div>
         </div>
         <Link href={"/contact"}
-              className={"flex w-48 rounded-full bg-secondary py-2 justify-center text-center text-tertiary italic"}>
+              className={"flex w-48 rounded-full bg-secondary py-2 justify-center text-center text-tertiary italic hover:bg-lighter-secondary"}>
           Planifier mon voyage
         </Link>
       </Section>
