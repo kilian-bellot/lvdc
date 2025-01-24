@@ -3,8 +3,10 @@ import Section from "@app/_components/Section";
 import MediaTextColumnLayout from "@app/_components/MediaTextColumnLayout";
 import elephantImage from "@/public/assets/book/elephant.png";
 import athenImage from "@/public/assets/book/athen.png";
+import hillsImage from "@/public/assets/book/hills.png";
 import Divider from "@app/_components/Divider";
 import TripBook from "@app/_components/TripBook";
+import Image from "@node_modules/next/image";
 
 export default function Book() {
   return (
@@ -31,29 +33,33 @@ export default function Book() {
           </p>
         </MediaTextColumnLayout>
       </Section>
-      {/*<Section>*/}
-      {/*  <p className={"font-bold"}>*/}
-      {/*    Que contient votre carnet de voyage personnalisé ?*/}
-      {/*  </p>*/}
-      {/*  <p>*/}
-      {/*    Selon votre voyage, sa durée et le(s) pays visité(s), le contenu peut légèrement varier.*/}
-      {/*  </p>*/}
-      {/*  <p>*/}
-      {/*    Vous y trouverez les informations suivantes :*/}
-      {/*  </p>*/}
-      {/*  <ul>*/}
-      {/*    <li>Les étapes clés de votre voyage ;</li>*/}
-      {/*    <li>Vos hébergements ;</li>*/}
-      {/*    <li>Vos transports ;</li>*/}
-      {/*    <li>Vos réservations d'activités et excursions ;</li>*/}
-      {/*    <li>Des bonnes adresses ;</li>*/}
-      {/*    <li>Des conseils pratiques sur votre destination ;</li>*/}
-      {/*    <li>Une liste de choses à faire pour préparer votre bagage ;</li>*/}
-      {/*    <li>Une carte interactive totalement personnalisée.</li>*/}
-      {/*  </ul>*/}
-      {/*</Section>*/}
+      <Section className={"px-2 sm:px-8"}>
+        <p className={"font-bold"}>
+          Que contient votre carnet de voyage personnalisé ?
+        </p>
+        <p>
+          Selon votre voyage, sa durée et le(s) pays visité(s), le contenu peut légèrement varier.
+        </p>
+        <p className={"mt-4"}>
+          Vous y trouverez les informations suivantes :
+        </p>
+        <ul className={"list-disc ml-8"}>
+          <li>Les étapes clés de votre voyage ;</li>
+          <li>Vos hébergements ;</li>
+          <li>Vos transports ;</li>
+          <li>Vos réservations d'activités et excursions ;</li>
+          <li>Des bonnes adresses ;</li>
+          <li>Des conseils pratiques sur votre destination ;</li>
+          <li>Une liste de choses à faire pour préparer votre bagage ;</li>
+          <li>Une carte interactive totalement personnalisée.</li>
+        </ul>
+        <Image src={hillsImage} alt={"paysage paradisiaque de collines verdoyantes sur une île"}
+               placeholder={"blur"} style={{objectFit: "cover"}} className={"py-4"}
+        />
+      </Section>
       {/*<Section title={"Exemple d'un cart de voyage pour un séjour à Lisbonne"}>*/}
       {/*  <TripBook/>*/}
+      {/*  <p className={"text-center italic"}>Construction du carnet en cours...</p>*/}
       {/*</Section>*/}
     </Page>
   );

@@ -58,13 +58,13 @@ export default function PolaroidBook({images}) {
           <div key={index} className={`relative bg-white p-2 max-w-fit max-h-fit`}
                style={{transform: rotateStyle(rotation)}}>
             <Image src={src} alt={alt} className={`w-96 sm:w-72 h-64 object-cover`}/>
-            <span className={`absolute ${arrowContainerStyleByArrowPosition(arrowPosition)}`}>
-              <span className={"relative"}>
+            <div className={`absolute ${arrowContainerStyleByArrowPosition(arrowPosition)}`}>
+              <div className={"relative"}>
                 <Icon name={"curved-arrow"} size={36} color={"tertiary"}
                       className={`${arrowStyleByArrowPosition(arrowPosition)}`}/>
                 <p className={`absolute w-max ${labelStyleByArrowPosition(arrowPosition)} text-tertiary`}>{location}</p>
-              </span>
-            </span>
+              </div>
+            </div>
           </div>
         )
       })}
