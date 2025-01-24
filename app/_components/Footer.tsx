@@ -24,7 +24,7 @@ export default function Footer() {
           <Link href={"https://facebook.com"} aria-label={"facebook"}>
             <Icon name={"facebook"} size={36} color={"secondary"}/>
           </Link>
-          <Link href={"https://instagram.com"} aria-label={"instagram"}>
+          <Link href={"https://instagram.com/lesvoyagesdecharlene"} aria-label={"instagram"}>
             <Icon name={"instagram"} size={36} color={"secondary"}/>
           </Link>
         </span>
