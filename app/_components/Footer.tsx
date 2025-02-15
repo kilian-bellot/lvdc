@@ -21,7 +21,7 @@ export default function Footer() {
           Retrouvez moi sur
         </p>
         <span className={"flex justify-center gap-2"}>
-          <Link href={"https://facebook.com"} aria-label={"facebook"}>
+          <Link href={"https://www.facebook.com/people/Les-voyages-de-Charl%C3%A8ne/61572024227114/"} aria-label={"facebook"}>
             <Icon name={"facebook"} size={36} color={"secondary"}/>
           </Link>
           <Link href={"https://instagram.com/lesvoyagesdecharlene"} aria-label={"instagram"}>
