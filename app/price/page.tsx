@@ -50,13 +50,13 @@ export default function Price() {
       </Section>
       <Section className={"flex items-center justify-center xl:gap-x-8"}>
         <div className={"flex flex-col w-full sm:w-2/3 xl:max-w-2xl"}>
-          <h3 className={"mb-4 text-xl underline font-bold"}>Les options :</h3>
+          <h3 className={"mb-4 text-xl underline font-bold"}>Les suppléments :</h3>
           <ul className={"list-disc max-w-fit pl-8 mb-4"}>
             <li>
-              Plus de 10 jours de voyage : 20$ CAD
+              Plus de 10 jours de voyage : 15$ CAD
             </li>
             <li>
-              Plus de 4 personnes : 10$ CAD/jour/personne supplémentaire
+              Plus de 4 personnes : 50$ CAD/personne supplémentaire
             </li>
           </ul>
           <p className={"italic"}>
