@@ -11,7 +11,7 @@ export default function Price() {
       <Section title={"Quel est le tarif de mon accompagnement ?"} className={"flex flex-col sm:flex-row justify-center xl:gap-x-32"}>
         <div className={"flex items-center justify-center"}>
           <p className={"h-fit p-4 sm:px-8 bg-secondary text-tertiary text-center text-2xl"}>
-            <span className={"font-bold"}>10$ CAD</span> par jour pour 10 jours de voyage
+            <span className={"font-bold"}>15$ CAD</span> par jour pour 10 jours de voyage
           </p>
         </div>
         <div className={"flex flex-col sm:w-2/3 xl:max-w-2xl p-4"}>
